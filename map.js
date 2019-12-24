@@ -1,10 +1,47 @@
 var osm = new ol.layer.Tile({ visible: true,
     source: new ol.source.OSM()
 });
-var ecuadorBoundary = new ol.layer.Image({ source: new ol.source.ImageWMS({
+
+var bingRoads = new ol.layer.Tile({ title: 'Bing Maps—Roads',
+type: 'base',
+visible: false,
+source: new ol.source.BingMaps({ key: 'X',
+imagerySet: 'Road'
+}) });
+var bingAerial = new ol.layer.Tile({ title: 'Bing Maps—Aerial',
+type: 'base',
+visible: false,
+source: new ol.source.BingMaps({ key: 'X',
+imagerySet: 'Aerial'
+}) });
+
+var stamenWatercolor = new ol.layer.Tile({ title: 'Stamen Watercolor',
+type: 'base',
+visible: false,
+source: new ol.source.Stamen({ layer: 'watercolor'
+}) });
+var stamenToner = new ol.layer.Tile({ title: 'Stamen Toner',
+type: 'base',
+visible: false,
+source: new ol.source.Stamen({ layer: 'toner'
+}) });
+
+
+
+
+
+var bingAerialWithLabels = new ol.layer.Tile({ title: 'Bing Maps—Aerial with Labels', type: 'base',
+visible: false,
+source: new ol.source.BingMaps({ key: 'Ao-LZ_ysaEN1dmvsePcEj6mMWTqbyBZsQvJaSzgfqmxClkNrpzzi3klQiTtx-sls',
+imagerySet: 'AerialWithLabels'
+}) });
+
+var milanoBovisa = new ol.layer.Image({ source: new ol.source.ImageWMS({
         url: 'http://localhost:8080/geoserver/wms',
         params: {'LAYERS': 'Example:ECU_adm0', 'STYLES': 'polygon'} })
 });
+
+
 var map = new ol.Map({
     target: document.getElementById('map'), view: new ol.View({
         center: ol.proj.fromLonLat([9.1630, 45.505]),
@@ -17,4 +54,8 @@ var map = new ol.Map({
         })
         ])
 });
-map.addLayer(osm); map.addLayer(ecuadorBoundary);
+
+
+
+map.addLayer(osm);
+map.addLayer(milanoBovisa);
