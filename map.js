@@ -7,8 +7,8 @@ var ecuadorBoundary = new ol.layer.Image({ source: new ol.source.ImageWMS({
 });
 var map = new ol.Map({
     target: document.getElementById('map'), view: new ol.View({
-        center: ol.proj.fromLonLat([-84, -2]),
-        zoom: 6 }),
+        center: ol.proj.fromLonLat([9.1630, 45.505]),
+        zoom: 16.5 }),
     controls: ol.control.defaults().extend([ new ol.control.ScaleLine(),
         new ol.control.FullScreen(),
         new ol.control.OverviewMap(),
