@@ -36,19 +36,25 @@ imagerySet: 'AerialWithLabels'
 
 
 
-var milanoBovisaPoint = new ol.layer.Image({ source: new ol.source.ImageWMS({
+var milanoBovisaPoint = new ol.layer.Image({
+  title: 'Points',
+  source: new ol.source.ImageWMS({
         title: 'Points',
         url: 'http://localhost:8080/geoserver/wms',
-        params: {'LAYERS': 'Milan:Points'} })
+        params: {'LAYERS': 'Milan:Points'}, 'STYLES': 'point' })
 });
 
 
-var milanoBovisaLines = new ol.layer.Image({ source: new ol.source.ImageWMS({
-        title: 'Lines',
+var milanoBovisaLines = new ol.layer.Image({
+  title: 'Lines',
+  source: new ol.source.ImageWMS({
         url: 'http://localhost:8080/geoserver/wms',
-        params: {'LAYERS': 'Milan:Lines'}
+        params: {'LAYERS': 'Milan:Lines', 'STYLES': 'line'}
     })
 });
+
+
+
 
 var groupLayer = new ol.layer.Group({
 title: 'Layers',
