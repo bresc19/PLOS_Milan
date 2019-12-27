@@ -50,7 +50,7 @@ var map = new ol.Map({
     layers: [
         new ol.layer.Group({
             title: 'Base Maps',
-            layers: [stamenToner, stamenWatercolor, bingAerialWithLabels, bingAerial, bingRoads, osm]
+            layers: [stamenToner, stamenWatercolor, bingAerialWithLabels, osm]
         })],
     controls: ol.control.defaults().extend([ new ol.control.ScaleLine(),
         new ol.control.FullScreen(),
@@ -63,7 +63,3 @@ var map = new ol.Map({
 
 var layerSwitcher = new ol.control.LayerSwitcher({});
 map.addControl(layerSwitcher);
-
-
-map.addLayer(osm);
-map.addLayer(milanoBovisa);
