@@ -5,13 +5,13 @@ source: new ol.source.OSM() });
 var bingRoads = new ol.layer.Tile({ title: 'Bing Maps—Roads',
 type: 'base',
 visible: false,
-source: new ol.source.BingMaps({ key: 'X',
+source: new ol.source.BingMaps({ key: 'Ao-LZ_ysaEN1dmvsePcEj6mMWTqbyBZsQvJaSzgfqmxClkNrpzzi3klQiTtx-sls',
 imagerySet: 'Road'
 }) });
 var bingAerial = new ol.layer.Tile({ title: 'Bing Maps—Aerial',
 type: 'base',
 visible: false,
-source: new ol.source.BingMaps({ key: 'X',
+source: new ol.source.BingMaps({ key: 'Ao-LZ_ysaEN1dmvsePcEj6mMWTqbyBZsQvJaSzgfqmxClkNrpzzi3klQiTtx-sls',
 imagerySet: 'Aerial'
 }) });
 
@@ -39,14 +39,14 @@ imagerySet: 'AerialWithLabels'
 var milanoBovisaPoint = new ol.layer.Image({ source: new ol.source.ImageWMS({
         title: 'Points',
         url: 'http://localhost:8080/geoserver/wms',
-        params: {'LAYERS': 'Milan:point1'} })
+        params: {'LAYERS': 'Milan:Points'} })
 });
 
 
 var milanoBovisaLines = new ol.layer.Image({ source: new ol.source.ImageWMS({
         title: 'Lines',
         url: 'http://localhost:8080/geoserver/wms',
-        params: {'LAYERS': 'Milan:roadlinks_1_blue'}
+        params: {'LAYERS': 'Milan:Lines'}
     })
 });
 
@@ -56,7 +56,7 @@ layers: [milanoBovisaLines, milanoBovisaPoint] });
 
 var groupMaps =   new ol.layer.Group({
   title: 'Base Maps',
-  layers: [stamenToner, stamenWatercolor, bingAerialWithLabels, osm]
+  layers: [stamenToner, stamenWatercolor ,bingRoads, bingAerial, bingAerialWithLabels, osm]
 });
 
 var map = new ol.Map({
