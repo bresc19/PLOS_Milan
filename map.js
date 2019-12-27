@@ -43,9 +43,15 @@ var milanoBovisa = new ol.layer.Image({ source: new ol.source.ImageWMS({
 
 
 var map = new ol.Map({
-    target: document.getElementById('map'), view: new ol.View({
+    target: document.getElementById('map'),
+    view: new ol.View({
         center: ol.proj.fromLonLat([9.1630, 45.505]),
         zoom: 16.5 }),
+    layers: [
+        new ol.layer.Group({
+            title: 'Base Maps',
+            layers: [stamenToner, stamenWatercolor, bingAerialWithLabels, bingAerial, bingRoads, osm]
+        })],
     controls: ol.control.defaults().extend([ new ol.control.ScaleLine(),
         new ol.control.FullScreen(),
         new ol.control.OverviewMap(),
