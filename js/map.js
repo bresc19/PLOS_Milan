@@ -39,34 +39,32 @@ imagerySet: 'AerialWithLabels'
 var milanoBovisaPoint = new ol.layer.Image({ source: new ol.source.ImageWMS({
         title: 'Points',
         url: 'http://localhost:8080/geoserver/wms',
-        params: {'LAYERS': 'Milan:point1', 'STYLES': 'point'} })
+        params: {'LAYERS': 'Milan:point1'} })
 });
 
 
 var milanoBovisaLines = new ol.layer.Image({ source: new ol.source.ImageWMS({
         title: 'Lines',
         url: 'http://localhost:8080/geoserver/wms',
-        params: {'LAYERS': 'Milan:roadlinks_1_blue', 'STYLES': 'polygon'}
+        params: {'LAYERS': 'Milan:roadlinks_1_blue'}
     })
 });
 
+var groupLayer = new ol.layer.Group({
+title: 'Layers',
+layers: [milanoBovisaLines, milanoBovisaPoint] });
 
-
+var groupMaps =   new ol.layer.Group({
+  title: 'Base Maps',
+  layers: [stamenToner, stamenWatercolor, bingAerialWithLabels, osm]
+});
 
 var map = new ol.Map({
     target: document.getElementById('map'),
     view: new ol.View({
         center: ol.proj.fromLonLat([9.1630, 45.50477]),
         zoom: 17 }),
-        layers: [
-      new ol.layer.Group({
-      title: 'Base Maps',
-      layers: [stamenToner, stamenWatercolor, bingAerialWithLabels, osm]
-      }),
-      new ol.layer.Group({
-      title: 'Layers',
-      layers: [milanoBovisaLines, milanoBovisaPoint] })
-    ],
+        layers: [groupMaps, groupLayer ],
     controls: ol.control.defaults().extend([ new ol.control.ScaleLine(),
         new ol.control.FullScreen(),
         new ol.control.OverviewMap(),
