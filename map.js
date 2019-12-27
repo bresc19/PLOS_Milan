@@ -1,6 +1,6 @@
-var osm = new ol.layer.Tile({ visible: true,
-    source: new ol.source.OSM()
-});
+var osm = new ol.layer.Tile({ title: 'OpenStreetMap', type: 'base',
+visible: true,
+source: new ol.source.OSM() });
 
 var bingRoads = new ol.layer.Tile({ title: 'Bing Maps—Roads',
 type: 'base',
@@ -55,6 +55,8 @@ var map = new ol.Map({
         ])
 });
 
+var layerSwitcher = new ol.control.LayerSwitcher({});
+map.addControl(layerSwitcher);
 
 
 map.addLayer(osm);
