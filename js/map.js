@@ -1,24 +1,84 @@
-var vectorSource = new ol.source.Vector({
-loader: function(extent, resolution, projection) {
-var url = 'http://localhost:8080/geoserver/Milan/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Milan%3ALines&maxFeatures=50&outputFormat=text%2Fjavascript';
-$.ajax({
-  url: url, dataType: 'jsonp',
-  jsonpCallback: "parseResponse"
-    }); }
+
+var geojsonFormat1 = new ol.format.GeoJSON();
+var geojsonFormat2 = new ol.format.GeoJSON();
+var vectorSource_lines = new ol.source.Vector({
+            loader: function (extent, resolution, projection) {
+              $.ajax('http://localhost:8080/geoserver/Milan/wfs',{
+        type: 'GET',
+        data: {
+            service: 'WFS',
+            version: '1.0.0',
+            request: 'GetFeature',
+            typename: 'Milan:Lines',
+            srsname: 'EPSG:3857',
+            outputFormat: 'text/javascript',
+            bbox: extent.join(',') + ',EPSG:3857'
+            },
+        dataType: 'jsonp',
+        jsonpCallback:'callback:loadFeatures',
+        jsonp:'format_options'
+        });
+
+            },
+        });
+
+
+  /*    var vectorSource_points = new ol.source.Vector({
+                  loader: function (extent, resolution, projection) {
+                    $.ajax('http://localhost:8080/geoserver/Milan/wfs',{
+              type: 'GET',
+              data: {
+                  service: 'WFS',
+                  version: '1.0.0',
+                  request: 'GetFeature',
+                  typename: 'Milan:Points',
+                  srsname: 'EPSG:3857',
+                  outputFormat: 'text/javascript',
+                  bbox: extent.join(',') + ',EPSG:3857'
+                  },
+              dataType: 'jsonp',
+              jsonpCallback:'callback:loadFeatures',
+              jsonp:'format_options'
+              });
+
+                  },
+              });
+
+*/
+               window.loadFeatures = function(response) {
+              vectorSource_lines.addFeatures(geojsonFormat1.readFeatures(response));
+
+            };
+
+
+
+                var milanoBovisaLines = new ol.layer.Vector({
+                  source: vectorSource_lines,
+                    title: 'Lines',
+                    name: 'Lines',
+                    style: new ol.style.Style({
+                    stroke: new ol.style.Stroke({ color: 'rgb(0,0,255)', width: 2
+                    }) })
+                });
+
+
+
+
+
+
+
+
+
+
+/*        var milanoBovisaPoints = new ol.layer.Image({
+  title: 'Points',
+  source: new ol.source.ImageWMS({
+        title: 'Points',
+        url: 'http://localhost:8080/geoserver/wms',
+        params: {'LAYERS': 'Milan:Points'}, 'STYLES': 'point' })
 });
 
-var geojsonFormat = new ol.format.GeoJSON(); function loadFeatures(response) {
-vectorSource.addFeatures(geojsonFormat.readFeatures(response)); }
-
-var aaa = new ol.layer.Vector({ title: 'Linesss',
-source: vectorSource,
-style: new ol.style.Style({
-stroke: new ol.style.Stroke({ color: 'rgb(58, 255, 81)', width: 4
-}) })
-});
-
-
-
+*/
 
 var osm = new ol.layer.Tile({ title: 'OpenStreetMap', type: 'base',
 visible: true,
@@ -58,29 +118,10 @@ imagerySet: 'AerialWithLabels'
 
 
 
-var milanoBovisaPoint = new ol.layer.Image({
-  title: 'Points',
-  source: new ol.source.ImageWMS({
-        title: 'Points',
-        url: 'http://localhost:8080/geoserver/wms',
-        params: {'LAYERS': 'Milan:Points'}, 'STYLES': 'point' })
-});
-
-
-var milanoBovisaLines = new ol.layer.Image({
-  title: 'Lines',
-  source: new ol.source.ImageWMS({
-        url: 'http://localhost:8080/geoserver/wms',
-        params: {'LAYERS': 'Milan:Lines', 'STYLES': 'line'}
-    })
-});
-
-
-
 
 var groupLayer = new ol.layer.Group({
 title: 'Layers',
-layers: [aaa, milanoBovisaPoint] });
+layers: [milanoBovisaLines] });
 
 var groupMaps =   new ol.layer.Group({
   title: 'Base Maps',
@@ -97,7 +138,7 @@ var map = new ol.Map({
         new ol.control.FullScreen(),
         new ol.control.OverviewMap(),
         new ol.control.MousePosition({
-            coordinateFormat: ol.coordinate.createStringXY(4), projection: 'EPSG:32632'
+            coordinateFormat: ol.coordinate.createStringXY(4), projection: 'EPSG:3857'
         })
         ])
 });
