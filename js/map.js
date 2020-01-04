@@ -1,3 +1,25 @@
+var vectorSource = new ol.source.Vector({
+loader: function(extent, resolution, projection) {
+var url = 'http://localhost:8080/geoserver/Milan/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Milan%3ALines&maxFeatures=50&outputFormat=text%2Fjavascript';
+$.ajax({
+  url: url, dataType: 'jsonp',
+  jsonpCallback: "parseResponse"
+    }); }
+});
+
+var geojsonFormat = new ol.format.GeoJSON(); function loadFeatures(response) {
+vectorSource.addFeatures(geojsonFormat.readFeatures(response)); }
+
+var aaa = new ol.layer.Vector({ title: 'Linesss',
+source: vectorSource,
+style: new ol.style.Style({
+stroke: new ol.style.Stroke({ color: 'rgb(58, 255, 81)', width: 4
+}) })
+});
+
+
+
+
 var osm = new ol.layer.Tile({ title: 'OpenStreetMap', type: 'base',
 visible: true,
 source: new ol.source.OSM() });
@@ -58,7 +80,7 @@ var milanoBovisaLines = new ol.layer.Image({
 
 var groupLayer = new ol.layer.Group({
 title: 'Layers',
-layers: [milanoBovisaLines, milanoBovisaPoint] });
+layers: [aaa, milanoBovisaPoint] });
 
 var groupMaps =   new ol.layer.Group({
   title: 'Base Maps',
