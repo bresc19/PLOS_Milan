@@ -155,7 +155,7 @@ if (feature != null) {
 var pixel = event.pixel;
 var coord = map.getCoordinateFromPixel(pixel);
 popup.setPosition(coord);
-$(elementPopup).attr('title', 'Ecuador railways'); $(elementPopup).attr('data-content', '<b>Id: </b>' + feature.get('FID_rail_d') + '</br><b>Description: </b>' + feature.get('F_CODE_DES')); $(elementPopup).popover({'placement': 'top', 'html': true}); $(elementPopup).popover('show');
+$(elementPopup).attr('title', 'Values of the PLOSs'); $(elementPopup).attr('data-content', '<b>PLOS: </b>' + feature.get('PLOS') + '</br><b>EPLOS: </b>' + feature.get('EPLOS')); $(elementPopup).popover({'placement': 'top', 'html': true}); $(elementPopup).popover('show');
 } });
 
 map.on('pointermove', function(event) { if (event.dragging) {
