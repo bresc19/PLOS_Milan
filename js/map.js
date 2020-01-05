@@ -1,4 +1,5 @@
 
+
 var geojsonFormat1 = new ol.format.GeoJSON();
 var geojsonFormat2 = new ol.format.GeoJSON();
 var vectorSource_lines = new ol.source.Vector({
@@ -70,7 +71,7 @@ var vectorSource_lines = new ol.source.Vector({
 
 
 
-/*        var milanoBovisaPoints = new ol.layer.Image({
+       var milanoBovisaPoints = new ol.layer.Image({
   title: 'Points',
   source: new ol.source.ImageWMS({
         title: 'Points',
@@ -78,7 +79,7 @@ var vectorSource_lines = new ol.source.Vector({
         params: {'LAYERS': 'Milan:Points'}, 'STYLES': 'point' })
 });
 
-*/
+
 
 var osm = new ol.layer.Tile({ title: 'OpenStreetMap', type: 'base',
 visible: true,
@@ -121,7 +122,7 @@ imagerySet: 'AerialWithLabels'
 
 var groupLayer = new ol.layer.Group({
 title: 'Layers',
-layers: [milanoBovisaLines] });
+layers: [milanoBovisaLines, milanoBovisaPoints] });
 
 var groupMaps =   new ol.layer.Group({
   title: 'Base Maps',
@@ -162,4 +163,11 @@ map.on('pointermove', function(event) { if (event.dragging) {
 $(elementPopup).popover('destroy');
 return; }
 var pixel = map.getEventPixel(event.originalEvent); var hit = map.hasFeatureAtPixel(pixel); map.getTarget().style.cursor = hit ? 'pointer' : '';
+});
+
+map.on('click', function(event) { document.getElementById('get-feature-info').innerHTML = '';
+var viewResolution = (map.getView().getResolution());
+var url = milanoBovisaPoints.getSource().getFeatureInfoUrl(event.coordinate, viewResolution, 'EPSG:3857', {'INFO_FORMAT': 'text/html'});
+if (url)
+document.getElementById('get-feature-info').innerHTML = '<iframe seamless src="' + url + '"></iframe>';
 });
