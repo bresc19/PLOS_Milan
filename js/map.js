@@ -145,3 +145,21 @@ var map = new ol.Map({
 
 var layerSwitcher = new ol.control.LayerSwitcher({});
 map.addControl(layerSwitcher);
+var elementPopup = document.getElementById('popup');
+var popup = new ol.Overlay({ element: elementPopup
+}); map.addOverlay(popup);
+map.on('click', function(event) {
+var feature = map.forEachFeatureAtPixel(event.pixel, function(feature, layer) {
+return feature; });
+if (feature != null) {
+var pixel = event.pixel;
+var coord = map.getCoordinateFromPixel(pixel);
+popup.setPosition(coord);
+$(elementPopup).attr('title', 'Ecuador railways'); $(elementPopup).attr('data-content', '<b>Id: </b>' + feature.get('FID_rail_d') + '</br><b>Description: </b>' + feature.get('F_CODE_DES')); $(elementPopup).popover({'placement': 'top', 'html': true}); $(elementPopup).popover('show');
+} });
+
+map.on('pointermove', function(event) { if (event.dragging) {
+$(elementPopup).popover('destroy');
+return; }
+var pixel = map.getEventPixel(event.originalEvent); var hit = map.hasFeatureAtPixel(pixel); map.getTarget().style.cursor = hit ? 'pointer' : '';
+});
