@@ -11,73 +11,46 @@ PLoS is a measure of comfort and safety of existing and planned walkways. It all
 ## Project
 Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nord Bovisa Station) using HTML5, CCS and JavaScript.
 
-<img src="img/website.png" width="400" height="250">
+<kbd><img src="img/website.png" width="400" height="250" ></kbd>
+<br />
+<br />
 
-
-### Implementation
+### Implementation: Steps
+<img src="img/epicollect.jpeg" width="13%" height="13%"  align="right">
 
 1- **Collect Data**: using [EpiCollect](https://five.epicollect.net) we collect measurament of data for PLoS computation in a field survey and download them in .csv format; 
-<img src="img/epicollect.jpeg" width="13%" height="13%"  align="right">
-2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <img src="img/README.jpeg" width="30%" height="30%"  align="left">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <img src="img/README.jpeg" width="30%" height="30%"  align="right">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
+3-**WebGIS develop**: we develop a [website](https://github.com/bresc19/PLOS_Milan/blob/master/index.html) in order to show the the result of the PLoSs index computation
+<img src="img/PLOS.png" width="30%" height="30%"  align="right" >
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
+### Web Site Implementation: tool used
+- **QGIS**: data processing <img src="img/qgis.png" width="10%" height="10%"  align="right" >
 
+- **GeoServer** : store of shapefiles of *points collected* and *road network* with PLoSs values; <img src="img/Geoserver.svg" width="10%" height="10%"  align="right"  alt="small img" >
 
-
-
-
-
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
