@@ -45,9 +45,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 <br />
 <br />
-<br />
-<br />
-<br />
+
 ### Web Site Implementation: tool used
 - **GeoServer** : we import shapefiles of points collected and road network with PLoSs values; <img src="img/Geoserver.svg" width="10%" height="10%"  align="right"  alt="small img" >
 
