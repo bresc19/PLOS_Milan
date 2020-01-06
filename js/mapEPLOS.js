@@ -58,7 +58,7 @@ var vectorSource_lines = new ol.source.Vector({
                     title: 'Lines',
                     name: 'Lines',
                     style: new ol.style.Style({
-                    stroke: new ol.style.Stroke({ color: 'rgb(0,0,255)', width: 8
+                    stroke: new ol.style.Stroke({ color: ' #00FF00 ', width: 8
                     }) })
                 });
 
@@ -159,7 +159,7 @@ if (feature != null) {
 var pixel = event.pixel;
 var coord = map.getCoordinateFromPixel(pixel);
 popup.setPosition(coord);
-$(elementPopup).attr('title', 'Values of the PLoS'); $(elementPopup).attr('data-content', '<b>PLOS: </b>' + feature.get('PLOS')); $(elementPopup).popover({'placement': 'top', 'html': true}); $(elementPopup).popover('show');
+$(elementPopup).attr('title', 'Values of the PLOSs'); $(elementPopup).attr('data-content','</br><b>EPLOS: </b>' + feature.get('EPLOS')); $(elementPopup).popover({'placement': 'top', 'html': true}); $(elementPopup).popover('show');
 }
 
 });
