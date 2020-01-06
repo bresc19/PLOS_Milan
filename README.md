@@ -38,7 +38,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 
 3-**WebGIS develop**: we develop a [website](https://github.com/bresc19/PLOS_Milan/blob/master/index.html) in order to show the the result of the PLoSs index computation
-<img src="img/PLOS.png" width="30%" height="30%"  align="right" >
+<kbd><img src="img/PLOS.png" width="30%" height="30%"  align="right" ></kbd>
 <br />
 <br />
 <br />
@@ -47,7 +47,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 
 ### Web Site Implementation: tool used
-- **GeoServer** : we import shapefiles of points collected and road network with PLoSs values; <kbd><img src="img/Geoserver.svg" width="10%" height="10%"  align="right"  alt="small img" ></kbd>
+- **GeoServer** : we import shapefiles of points collected and road network with PLoSs values; <img src="img/Geoserver.svg" width="10%" height="10%"  align="right"  alt="small img" >
 
 
 ## Authors
