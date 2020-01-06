@@ -11,12 +11,12 @@ PLoS is a measure of comfort and safety of existing and planned walkways. It all
 ## Project
 Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nord Bovisa Station) using HTML5, CCS and JavaScript.
 
-<img src="img/website.png" width="400" height="250" >
+<kbd><img src="img/website.png" width="400" height="250" ></kbd>
 <br />
 <br />
 
 ### Implementation: Steps
-<img src="img/epicollect.jpeg" width="13%" height="13%"  align="right">
+<kbd><img src="img/epicollect.jpeg" width="13%" height="13%"  align="right"></kbd>
 
 1- **Collect Data**: using [EpiCollect](https://five.epicollect.net) we collect measurament of data for PLoS computation in a field survey and download them in .csv format; 
 <br />
@@ -28,7 +28,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 <br />
 <br />
-2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <img src="img/README.jpeg" width="30%" height="30%"  align="right">
+2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <kbd><img src="img/README.jpeg" width="30%" height="30%"  align="right"></kbd>
 <br />
 <br />
 <br />
@@ -47,7 +47,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 
 ### Web Site Implementation: tool used
-- **GeoServer** : we import shapefiles of points collected and road network with PLoSs values; <img src="img/Geoserver.svg" width="10%" height="10%"  align="right"  alt="small img" >
+- **GeoServer** : we import shapefiles of points collected and road network with PLoSs values; <kbd><img src="img/Geoserver.svg" width="10%" height="10%"  align="right"  alt="small img" ></kbd>
 
 
 ## Authors
