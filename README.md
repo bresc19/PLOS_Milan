@@ -16,7 +16,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 
 ### Implementation: Steps
-<kbd><img src="img/epicollect.jpeg" width="13%" height="13%"  align="right"></kbd>
+<img src="img/epicollect.jpeg" width="13%" height="13%"  align="right">
 
 1- **Collect Data**: using [EpiCollect](https://five.epicollect.net) we collect measurament of data for PLoS computation in a field survey and download them in .csv format; 
 <br />
@@ -28,7 +28,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 <br />
 <br />
-2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <kbd><img src="img/README.jpeg" width="30%" height="30%"  align="right"></kbd>
+2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <img src="img/README.jpeg" width="30%" height="30%"  align="right">
 <br />
 <br />
 <br />
@@ -38,7 +38,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 
 3-**WebGIS develop**: we develop a [website](https://github.com/bresc19/PLOS_Milan/blob/master/index.html) in order to show the the result of the PLoSs index computation
-<kbd><img src="img/PLOS.png" width="30%" height="30%"  align="right" ></kbd>
+<img src="img/PLOS.png" width="30%" height="30%"  align="right" >
 <br />
 <br />
 <br />
