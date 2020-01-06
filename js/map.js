@@ -168,7 +168,7 @@ $(elementPopup).attr('title', 'Values of the PLoS'); $(elementPopup).attr('data-
 
 
 map.on('pointermove', function(event) { if (event.dragging) {
-$(elementPopup).popover('destroy');
+$(elementPopup).popover('dispose');
 return; }
 var pixel = map.getEventPixel(event.originalEvent); var hit = map.hasFeatureAtPixel(pixel); map.getTarget().style.cursor = hit ? 'pointer' : '';
 });
