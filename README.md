@@ -47,10 +47,12 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 
 ### Web Site Implementation: tool used
-- **QGIS**: data processing 
-- **GeoServer** : store of shapefiles of *points collected* and *road network* with PLoSs values; 
+- **QGIS**;
+- **GeoServer**;
+- **OpenLayers**;
 
-<img src="img/Geoserver.svg" width="10%" height="10%"  align="right"  alt="small img" > <img src="img/qgis.png" width="8%" height="8%"  align="right"  alt="small img" >
+<img src="img/Geoserver.svg" width="10%" height="10%"alt="small img" > <img src="img/qgis.png" width="8%" height="8%"  alt="small img" >  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/OpenLayers_logo.svg/1024px-OpenLayers_logo.svg.png" width="8%" height="8%"  alt="small img" >  
+
 
 
 ## Authors
