@@ -14,27 +14,11 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <img src="img/website.png" width="400" height="250">
 
 
-
-
-
-```
-Give examples
-```
-
 ### Implementation
 
 1- **Collect Data**: using [EpiCollect](https://five.epicollect.net) we collect measurament of data for PLoS computation in a field survey and download them in .csv format; 
-
-
-
 <img src="img/epicollect.jpeg" width="13%" height="13%"  align="right">
-
-
-
-
-
-
-2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <img src="img/README.jpeg" width="25%" height="25%"  align="right">
+2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <img src="img/README.jpeg" width="30%" height="30%"  align="left">
 
 
 
