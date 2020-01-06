@@ -11,12 +11,12 @@ PLoS is a measure of comfort and safety of existing and planned walkways. It all
 ## Project
 Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nord Bovisa Station) using HTML5, CCS and JavaScript.
 
-<img src="img/website.png" width="400" height="250"style="border: 1px solid black">
+<img src="img/website.png" width="400" height="250" >
 <br />
 <br />
 
 ### Implementation: Steps
-<img src="img/epicollect.jpeg" width="13%" height="13%"  align="right"style="border: 1px solid black">
+<img src="img/epicollect.jpeg" width="13%" height="13%"  align="right">
 
 1- **Collect Data**: using [EpiCollect](https://five.epicollect.net) we collect measurament of data for PLoS computation in a field survey and download them in .csv format; 
 <br />
@@ -28,7 +28,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 <br />
 <br />
-2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <img src="img/README.jpeg" width="30%" height="30%"  align="right" style="border: 1px solid black">
+2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <img src="img/README.jpeg" width="30%" height="30%"  align="right">
 <br />
 <br />
 <br />
@@ -38,7 +38,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 
 3-**WebGIS develop**: we develop a [website](https://github.com/bresc19/PLOS_Milan/blob/master/index.html) in order to show the the result of the PLoSs index computation
-<img src="img/PLOS.png" width="30%" height="30%"  align="right" style="border: 1px solid black">
+<img src="img/PLOS.png" width="30%" height="30%"  align="right" >
 <br />
 <br />
 <br />
