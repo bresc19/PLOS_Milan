@@ -34,9 +34,17 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 <br />
 <br />
-
+<br />
+<br />
+<br />
+<br />
 3-**WebGIS develop**: we develop a [website](https://github.com/bresc19/PLOS_Milan/blob/master/index.html) in order to show the the result of the PLoSs index computation
 <img src="img/PLOS.png" width="30%" height="30%"  align="left">
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />
