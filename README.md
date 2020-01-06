@@ -16,9 +16,9 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 
 ### Implementation: Steps
+<img src="img/epicollect.jpeg" width="13%" height="13%"  align="right">
 
 1- **Collect Data**: using [EpiCollect](https://five.epicollect.net) we collect measurament of data for PLoS computation in a field survey and download them in .csv format; 
-<img src="img/epicollect.jpeg" width="13%" height="13%"  align="right">
 <br />
 <br />
 <br />
