@@ -53,8 +53,8 @@ window.loadFeatures = function(response) {
 
 var milanoBovisaLines = new ol.layer.Vector({
     source: vectorSource_lines,
-    title: 'Lines',
-    name: 'Lines',
+    title: 'RoadLinks',
+    name: 'RoadLinks',
     style: new ol.style.Style({
         stroke: new ol.style.Stroke({
             color: ' #00FF00 ',
