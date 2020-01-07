@@ -183,9 +183,8 @@ map.on('click', function(event) {
         var pixel = event.pixel;
         var coord = map.getCoordinateFromPixel(pixel);
         popup.setPosition(coord);
-        $(elementPopup).attr('title', 'Values of the PLoS');
-        $(elementPopup).attr('data-content', '<b>PLOS: </b>' + feature.get('PLOS'));
-        $(elementPopup).popover({
+        $(elementPopup).attr('data-content', '<b>Road: </b>' + feature.get('roadname') + '</br><b>Id: </b>' + feature.get('sourceid')
+              + '</br><b>PLoS: </b>' + feature.get('PLOS'));        $(elementPopup).popover({
             'placement': 'top',
             'html': true
         });
