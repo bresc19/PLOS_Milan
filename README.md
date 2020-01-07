@@ -16,7 +16,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 
 ### Implementation: Steps
-<img src="img/epicollect.jpeg" width="13%" height="13%"  align="right">
+<img src="https://five.epicollect.net/images/ec5-intro-collect-data.jpg" width="40%" height="40%"  align="right">
 
 1- **Collect Data**: using [EpiCollect](https://five.epicollect.net) we collect measurament of data for PLoS computation in a field survey and download them in .csv format; 
 <br />
@@ -26,19 +26,17 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 <br />
 <br />
-<br />
-<br />
-2-**Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments; <img src="img/README.jpeg" width="30%" height="30%"  align="right">
-<br />
-<br />
+ <img src="img/README.jpeg" width="30%" height="30%"  align="right">
+2- **Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments;
 <br />
 <br />
 <br />
 <br />
 <br />
-
-3-**WebGIS develop**: we develop a [website](https://github.com/bresc19/PLOS_Milan/blob/master/index.html) in order to show the the result of the PLoSs index computation
+<br />
+<br />
 <img src="img/PLOS.png" width="30%" height="30%"  align="right" >
+3- **WebGIS develop**: we develop a [website](https://github.com/bresc19/PLOS_Milan/blob/master/index.html) in order to show the the result of the PLoSs index computation
 <br />
 <br />
 <br />
@@ -47,10 +45,10 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 
 ## Website Implementation:
--**LayerSwitcher** in order to change basemaps;
--**WFS** (points) and **WMS** connections;
--**GetFeatureInfo** request for WMS layer;
--**Popup** in order to show PLoS computation;
+- **LayerSwitcher** in order to change basemaps;
+- **WFS** (points) and **WMS** connections;
+- **GetFeatureInfo** request for WMS layer;
+- **Popup** in order to show PLoS computation;
 
 
 ### Tool Used
@@ -59,7 +57,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 - ![badge](https://img.shields.io/badge/OpenLayers-6.1.1-9cf)
 
 
-## Authors
+### Authors
 
 * **Bresciani Matteo** 
 * **Orsenigo Andrea**
