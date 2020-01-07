@@ -51,9 +51,6 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 - ![badge](https://img.shields.io/badge/QGIS-3.4-green)
 - ![badge](https://img.shields.io/badge/OpenLayers-6.1.1-9cf)
 
-<img src="img/Geoserver.svg" width="10%" height="10%" alt="small img" > <img src="img/qgis.png" width="8%" height="8%"  alt="small img" >   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/OpenLayers_logo.svg/1024px-OpenLayers_logo.svg.png" width="5%" height="5%"  alt="small img" >  
-
-
 
 ## Authors
 
