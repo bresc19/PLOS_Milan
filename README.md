@@ -9,7 +9,7 @@ The Pedestrian LOS Model is aimed at evaluating walking conditions on road and s
 PLoS is a measure of comfort and safety of existing and planned walkways. It allows objective and sound evaluations of pedestrians’ perception and response to roadway environment.
 
 ## Project
-Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nord Bovisa Station) using HTML5, CCS and JavaScript.
+Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nord Bovisa Station)
 
 <kbd><img src="img/website.png" width="400" height="250" ></kbd>
 <br />
