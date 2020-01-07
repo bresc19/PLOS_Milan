@@ -11,7 +11,8 @@ PLoS is a measure of comfort and safety of existing and planned walkways. It all
 ## Project
 Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nord Bovisa Station)
 
-<kbd><img src="img/website.png" width="400" height="250" ></kbd>
+<kbd><img src="img/website.png" width="400" height="250"  align="left"></kbd><kbd><img src="img/GIS3.png" width="400" height="250"  align="right" ></kbd>
+
 <br />
 <br />
 
