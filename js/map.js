@@ -49,19 +49,42 @@ window.loadFeatures = function(response) {
 
 };
 
+var style1 = new ol.style.Style({
+    stroke: new ol.style.Stroke({
+        color: 'rgb(0,255,0)',
+        width: 8
+    })
+})
 
+var style2 = new ol.style.Style({
+    stroke: new ol.style.Stroke({
+        color: '#C9FF85',
+        width: 8
+    })
+})
 
+var style3 = new ol.style.Style({
+    stroke: new ol.style.Stroke({
+        color: 'rgb(255,255,0)',
+        width: 8
+    })
+})
 var milanoBovisaLines = new ol.layer.Vector({
     source: vectorSource_lines,
     title: 'RoadLinks',
     name: 'RoadLinks',
-    style: new ol.style.Style({
-        stroke: new ol.style.Stroke({
-            color: 'rgb(0,0,255)',
-            width: 8
-        })
-    })
+    style: function(feature, resolution) {
+       var name = feature.get('PLOS')
+       if(name<=2)
+       return style1;
+       else if(name>2 && name <= 2.75)
+       return style2;
+       else if(name>2.75 && name <= 3.5)
+       return style3;
+     }
 });
+
+
 
 
 
