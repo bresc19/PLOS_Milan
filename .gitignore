@@ -17,3 +17,4 @@ geoserver-2.15.1/webapps/geoserver/data/workspaces/Milan/Lines/Lines/layer.xml
 geoserver-2.15.1/webapps/geoserver/data/workspaces/Milan/Points/datastore.xml
 geoserver-2.15.1/webapps/geoserver/data/workspaces/Milan/Points/Points/featuretype.xml
 geoserver-2.15.1/webapps/geoserver/data/workspaces/Milan/Points/Points/layer.xml
+*.xml
