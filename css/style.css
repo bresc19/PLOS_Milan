@@ -259,6 +259,9 @@ figure figcaption {
   color: #2d71a1;
 }
 
+.imageborder { border: 3px solid #000; }
+
+
 .pricing .price-cta {
   position: absolute;
   bottom: 50px;
