@@ -52,7 +52,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 - **Popup** in order to show PLoS computation;
 
 
-### Tool Used
+### Tool Used :wrench:
 - ![badge](https://img.shields.io/badge/GeoServer-2.15-blue)
 - ![badge](https://img.shields.io/badge/QGIS-3.4-green)
 - ![badge](https://img.shields.io/badge/OpenLayers-6.1.1-9cf)
