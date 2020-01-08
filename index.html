@@ -142,13 +142,14 @@
 
 						<div class="col-md-4 mr-auto">
 
-							<h2 class="mb-4">The Pedestrian LOS Model is aimed at evaluating walking conditions on road and street corridors in urban environment.
-							PLoS is a measure of comfort and safety of existing and planned walkways. It allows objective and sound evaluations of pedestrians’ perception and response to roadway environment.</h2>
+							<h2 class="mb-4"></h2>
 							<p class="mb-4">
+								The Pedestrian LOS Model is aimed at evaluating walking conditions on road and street corridors in urban environment.
+								PLoS is a measure of comfort and safety of existing and planned walkways. It allows objective and sound evaluations of pedestrians’ perception and response to roadway environment.
 							</p>
 						</div>
 						<div class="col-md-6" data-aos="fade-left">
-							<img src="https://cleanairasia.org/wp-content/uploads/portal/files/Walkability.JPG" alt="Image" class="img-fluid">
+							<img src="https://cleanairasia.org/wp-content/uploads/portal/files/Walkability.JPG" alt="Image" class="img-fluid" width="2000" height="800">
 						</div>
 					</div>
 				</div>
@@ -168,7 +169,17 @@
 					<div class="row align-items-center">
 						<div class="col-md-4 ml-auto order-2">
 							<h2 class="mb-4">Collect :  </h2>
-							<p class="mb-4">using <a href="https://five.epicollect.net">EpiCollect</a> we collect measurament of data for PLoS computation in a field survey and download them in .csv format;</p>
+							<p class="mb-4">Using <a href="https://five.epicollect.net">EpiCollect</a> our group collects measurament of data for PLoS and enhanced PLoS computation.
+								In particular in eache street it was measured the value of:
+							<li>Number of lanes; </li>
+								<li>On-street parking;</li>
+								<li>Buffer;</li>
+								<li>Width of sidewalk;</li>
+								<li>Curb ramps;</li>
+								<li>Lighting;</li>
+								<li>Widht of bike laneand shoulder;</li>
+								While Traffic volume and th Vehicular speed are provided by <a href="http://systematica.net/">Systematica</a>.
+								Then we store the results in a field survey and download them in .csv format.</p>
 
 						</div>
 						<div class="col-md-6" data-aos="fade-right">
@@ -183,7 +194,11 @@
 					<div class="row align-items-center">
 						<div class="col-md-4 mr-auto">
 							<h1 class="mb-4">Process :</h1>
-							<p class="mb-4">we processed the data collection using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments
+							<p class="mb-4">
+									We proced to:
+									<li>Store the data collection using QGIS; </li>
+									<li>Make operations such as buffer, intersection and attribute table manipulation in order to link every point value to the corresponding road network segment; </li>
+									<li>Compute the PLoS and the enhanced PLoS </li>
 							</p>
 						</div>
 						<div class="col-md-6" data-aos="fade-left">
@@ -203,7 +218,7 @@
 					<div class="row align-items-center">
 						<div class="col-md-4 ml-auto order-2">
 							<h2 class="mb-4">WebGIS develop :  </h2>
-							<p class="mb-4">we developed a <a href="https://github.com/bresc19/PLOS_Milan/blob/master/index.html">website</a> in order to show the result of the PLoS and ePLoS computations</p>
+							<p class="mb-4">Development of a website loaded on <a href="https://github.com/bresc19/PLOS_Milan/blob/master/index.html">GitHub</a> in order to show the result of the PLoS and enhanced PLoS computations</p>
 
 						</div>
 						<div class="col-md-6" data-aos="fade-right">
@@ -244,7 +259,7 @@
 					<div class="step">
 						<span class="number"></span>
 						<h3>Popups</h3>
-						<p>in order to show PLoS/ePLoS values</p>
+						<p>in order to show PLoS/enhanced PLoS values</p>
 					</div>
 				</div>
 
@@ -260,24 +275,29 @@
 		<div class="site-section cta-section">
 			<div class="container">
 				<div class="row justify-content-center text-center mb-5">
-					<h2 class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">Tool Used</h2>
+					<h2 class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">Possibility to query the points collected on the map</h2>
 					<div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0" data-aos="fade-up">
 						<div class="row">
 							<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
 								<div class="feature-1 text-center">
-									<img src="https://img.shields.io/badge/OpenLayers-6.1.1-9cf">
+
+								</div>
+							</div>
+							<div class="col-md-4" data-aos="fade-down" data-aos-delay="200">
+								<div class="feature-1 text-center">
+									---
 									<h3 class="mb-3"></h3>
 								</div>
 							</div>
 							<div class="col-md-4" data-aos="fade-down" data-aos-delay="200">
 								<div class="feature-1 text-center">
-									<img src="https://img.shields.io/badge/GeoServer-2.15-blue">
+									---
 									<h3 class="mb-3"></h3>
 								</div>
 							</div>
 							<div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
 								<div class="feature-1 text-center">
-									<img src="https://img.shields.io/badge/QGIS-3.4-green">
+									---
 									<h3 class="mb-3"></h3>
 								</div>
 							</div>
@@ -304,6 +324,59 @@
 
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+
+		<footer class="footer" role="contentinfo">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 mb-4 mb-md-0">
+				<div class="col-md-4 mb-4 mb-md-0">
+					<h3>Tool Used </h3>
+					<ul class="list-unstyled">
+						<li><img src="https://img.shields.io/badge/QGIS-3.4-green"></li>
+						<li><img src="https://img.shields.io/badge/Epicollect-5-purple"></li>
+						<li><img src="https://img.shields.io/badge/OpenLayers-6.1.1-9cf"></li>
+						<li><img src="https://img.shields.io/badge/GeoServer-2.15-blue"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-7 ml-auto">
+				<div class="row site-section pt-0">
+
+					<div class="col-md-4 mb-4 mb-md-0">
+						<h3>Authors</h3>
+						<ul class="list-unstyled">
+							<li>Bresciani Matteo</li>
+							<li>Orsenigo Andrea</li>
+							<li>D'Ascoli Gabriele</li>
+							<li>Metehan Ergen</li>
+						</ul>
+					</div>
+					<div class="col-md-4 mb-4 mb-md-0">
+						<h3>Downloads</h3>
+						<ul class="list-unstyled">
+							<li><a href="#">Get from the App Store</a></li>
+							<li><a href="#">Get from the Play Store</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center text-center">
+			<div class="col-md-7">
+				<p class="copyright">&copy; Copyright SoftLand. All Rights Reserved</p>
+				<div class="credits">
+					<!--
+						All the links in the footer should remain intact.
+						You can delete the links only if you purchased the pro version.
+						Licensing information: https://bootstrapmade.com/license/
+						Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=SoftLand
+					-->
+					Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 
 </body>
 
