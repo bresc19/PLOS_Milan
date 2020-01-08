@@ -21,29 +21,6 @@ var vectorSource_lines = new ol.source.Vector({
     },
 });
 
-
-/*    var vectorSource_points = new ol.source.Vector({
-                  loader: function (extent, resolution, projection) {
-                    $.ajax('http://localhost:8080/geoserver/Milan/wfs',{
-              type: 'GET',
-              data: {
-                  service: 'WFS',
-                  version: '1.0.0',
-                  request: 'GetFeature',
-                  typename: 'Milan:Points',
-                  srsname: 'EPSG:3857',
-                  outputFormat: 'text/javascript',
-                  bbox: extent.join(',') + ',EPSG:3857'
-                  },
-              dataType: 'jsonp',
-              jsonpCallback:'callback:loadFeatures',
-              jsonp:'format_options'
-              });
-
-                  },
-              });
-
-*/
 window.loadFeatures = function(response) {
     vectorSource_lines.addFeatures(geojsonFormat1.readFeatures(response));
 
@@ -215,8 +192,6 @@ map.on('click', function(event) {
     }
 
 });
-
-
 
 
 map.on('pointermove', function(event) {
