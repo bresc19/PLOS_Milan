@@ -90,6 +90,7 @@ var milanoBovisaLines = new ol.layer.Vector({
 
 var milanoBovisaPoints = new ol.layer.Image({
     title: 'Points',
+    visible: false,
     source: new ol.source.ImageWMS({
         title: 'Points',
         url: 'http://localhost:8080/geoserver/wms',
