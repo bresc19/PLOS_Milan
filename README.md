@@ -58,7 +58,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 - ![badge](https://img.shields.io/badge/OpenLayers-6.1.1-9cf)
 
 
-### Authors :busts_in_silhouette: :busts_in_silhouette:
+### Authors :bust_in_silhouette: :bust_in_silhouette: :bust_in_silhouette: :bust_in_silhouette:
 
 * **Bresciani Matteo** 
 * **Orsenigo Andrea**
