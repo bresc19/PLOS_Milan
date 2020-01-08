@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl-25a0300c:16f723e3d3a:-7fd8</id>
+  <name>Lines</name>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-25a0300c:16f723e3d3a:-7fe0</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Europe/Rome</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">http://localhost:8080/geoserver/PLOS</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="url">file:///Users/Brescia/Documents/PLOS_Milan/Resources/Lines.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

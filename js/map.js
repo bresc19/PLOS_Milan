@@ -196,8 +196,6 @@ var popup = new ol.Overlay({
 });
 map.addOverlay(popup);
 
-
-
 map.on('click', function(event) {
     var feature = map.forEachFeatureAtPixel(event.pixel, function(feature, layer) {
         return feature;
