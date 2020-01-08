@@ -1,12 +1,12 @@
 <layer>
   <name>Lines</name>
-  <id>LayerInfoImpl--3265e7a6:16f848248b6:-7ff9</id>
+  <id>LayerInfoImpl-25a0300c:16f723e3d3a:-7fd6</id>
   <type>VECTOR</type>
   <defaultStyle>
     <id>StyleInfoImpl-25a0300c:16f723e3d3a:-7fff</id>
   </defaultStyle>
   <resource class="featureType">
-    <id>FeatureTypeInfoImpl--3265e7a6:16f848248b6:-7ffa</id>
+    <id>FeatureTypeInfoImpl-25a0300c:16f723e3d3a:-7fd7</id>
   </resource>
   <attribution>
     <logoWidth>0</logoWidth>
