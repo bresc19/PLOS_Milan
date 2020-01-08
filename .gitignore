@@ -6,3 +6,14 @@
 .DS_Store
 .idea/inspectionProfiles/Project_Default.xml
 v6.1.1/.DS_Store
+geoserver-2.15.1/webapps/geoserver/data/global.xml
+geoserver-2.15.1/webapps/geoserver/data/gwc-layers/LayerInfoImpl-1860110f_16f84ca441d_-7ff6.xml
+geoserver-2.15.1/webapps/geoserver/data/gwc-layers/LayerInfoImpl-1860110f_16f84ca441d_-7ff9.xml
+geoserver-2.15.1/webapps/geoserver/data/gwc-layers/LayerInfoImpl-25a0300c_16f723e3d3a_-7fd3.xml
+geoserver-2.15.1/webapps/geoserver/data/gwc-layers/LayerInfoImpl-25a0300c_16f723e3d3a_-7fd6.xml
+geoserver-2.15.1/webapps/geoserver/data/workspaces/Milan/Lines/datastore.xml
+geoserver-2.15.1/webapps/geoserver/data/workspaces/Milan/Lines/Lines/featuretype.xml
+geoserver-2.15.1/webapps/geoserver/data/workspaces/Milan/Lines/Lines/layer.xml
+geoserver-2.15.1/webapps/geoserver/data/workspaces/Milan/Points/datastore.xml
+geoserver-2.15.1/webapps/geoserver/data/workspaces/Milan/Points/Points/featuretype.xml
+geoserver-2.15.1/webapps/geoserver/data/workspaces/Milan/Points/Points/layer.xml
