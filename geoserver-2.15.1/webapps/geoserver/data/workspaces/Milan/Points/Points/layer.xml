@@ -1,12 +1,12 @@
 <layer>
   <name>Points</name>
-  <id>LayerInfoImpl-25a0300c:16f723e3d3a:-7fd3</id>
+  <id>LayerInfoImpl--3265e7a6:16f848248b6:-7ff6</id>
   <type>VECTOR</type>
   <defaultStyle>
     <id>StyleInfoImpl-25a0300c:16f723e3d3a:-8000</id>
   </defaultStyle>
   <resource class="featureType">
-    <id>FeatureTypeInfoImpl-25a0300c:16f723e3d3a:-7fd4</id>
+    <id>FeatureTypeInfoImpl--3265e7a6:16f848248b6:-7ff7</id>
   </resource>
   <attribution>
     <logoWidth>0</logoWidth>

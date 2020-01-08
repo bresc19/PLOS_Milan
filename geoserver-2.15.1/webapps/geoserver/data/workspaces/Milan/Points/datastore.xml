@@ -1,5 +1,5 @@
 <dataStore>
-  <id>DataStoreInfoImpl-25a0300c:16f723e3d3a:-7fd5</id>
+  <id>DataStoreInfoImpl--3265e7a6:16f848248b6:-7ff8</id>
   <name>Points</name>
   <type>Shapefile</type>
   <enabled>true</enabled>
@@ -11,11 +11,11 @@
     <entry key="filetype">shapefile</entry>
     <entry key="create spatial index">true</entry>
     <entry key="memory mapped buffer">false</entry>
-    <entry key="timezone">Europe/Rome</entry>
+    <entry key="timezone">Europe/Berlin</entry>
     <entry key="enable spatial index">true</entry>
     <entry key="namespace">http://localhost:8080/geoserver/PLOS</entry>
     <entry key="cache and reuse memory maps">true</entry>
-    <entry key="url">file:///Users/Brescia/Documents/PLOS_Milan/Resources/Points.shp</entry>
+    <entry key="url">file://C:\Users\bresc\OneDrive - Politecnico di Milano\Documenti\GitHub\PLOS_Milan\Resources\Points.shp</entry>
     <entry key="fstype">shape</entry>
   </connectionParameters>
   <__default>false</__default>
