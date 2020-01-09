@@ -1,6 +1,6 @@
 #map{
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 
 .ol-mouse-position {
@@ -18,6 +18,11 @@
 .popover {
   width: 200px;
   height: auto;
+}
+#get-feature-info{
+  position: fixed;
+ top: 100px;
+ left: 60px;
 }
 
 iframe {
