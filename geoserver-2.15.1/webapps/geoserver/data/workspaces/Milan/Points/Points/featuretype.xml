@@ -1,5 +1,5 @@
 <featureType>
-  <id>FeatureTypeInfoImpl-25a0300c:16f723e3d3a:-7fd4</id>
+  <id>FeatureTypeInfoImpl--3f233358:16f89cd5503:-7ff5</id>
   <name>Points</name>
   <nativeName>Points</nativeName>
   <namespace>
@@ -48,8 +48,11 @@
   </latLonBoundingBox>
   <projectionPolicy>FORCE_DECLARED</projectionPolicy>
   <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
   <store class="dataStore">
-    <id>DataStoreInfoImpl-25a0300c:16f723e3d3a:-7fd5</id>
+    <id>DataStoreInfoImpl--3f233358:16f89cd5503:-7ff8</id>
   </store>
   <serviceConfiguration>false</serviceConfiguration>
   <maxFeatures>0</maxFeatures>
