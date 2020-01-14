@@ -28,7 +28,7 @@ Web GIS about a QGIS project of PLOS computation of an area in Milan (Milano Nor
 <br />
 <br />
  <img src="img/README.jpeg" width="30%" height="30%"  align="left">
-2- **Data Processing**: we process date using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments;
+2- **Data Processing**: we process data using QGIS, with operations such as buffer, intersection and attribute table manipulation in order to associate each point value to the corresponding road network and to compute the PLoSs index for each segments;
 <br />
 <br />
 <br />
