@@ -46,9 +46,9 @@ var style3 = new ol.style.Style({
         width: 8
     })
 })
-var milanoBovisaLines = new ol.layer.Vector({
+var plos_layer = new ol.layer.Vector({
     source: vectorSource_lines,
-    title: 'RoadLinks',
+    title: 'PLOS',
     name: 'RoadLinks',
     style: function(feature, resolution) {
        var name = feature.get('PLOS')
@@ -60,7 +60,20 @@ var milanoBovisaLines = new ol.layer.Vector({
        return style3;
      }
 });
-
+var eplos_layer = new ol.layer.Vector({
+    source: vectorSource_lines,
+    title: 'enhanced PLOS',
+    name: 'RoadLinks',
+    style: function(feature, resolution) {
+       var name = feature.get('PLOS')
+       if(name<=2)
+       return style1;
+       else if(name>2 && name <= 2.75)
+       return style2;
+       else if(name>2.75 && name <= 3.5)
+       return style3;
+     }
+});
 
 
 
@@ -142,7 +155,7 @@ var bingAerialWithLabels = new ol.layer.Tile({
 
 var groupLayer = new ol.layer.Group({
     title: 'Layers',
-    layers: [milanoBovisaLines, milanoBovisaPoints]
+    layers: [plos_layer, eplos_layer, milanoBovisaPoints]
 });
 
 var groupMaps = new ol.layer.Group({
@@ -184,7 +197,7 @@ map.on('click', function(event) {
         var coord = map.getCoordinateFromPixel(pixel);
         popup.setPosition(coord);
         $(elementPopup).attr('data-content', '<b>Road: </b>' + feature.get('roadname') + '</br><b>Id: </b>' + feature.get('sourceid')
-              + '</br><b>PLoS: </b>' + feature.get('PLOS'));        $(elementPopup).popover({
+              + '</br><b>PLoS: </b>' + feature.get('PLOS') +  '</br><b>enhanced PLoS: </b>' + feature.get('EPLOS') );        $(elementPopup).popover({
             'placement': 'top',
             'html': true
         });
