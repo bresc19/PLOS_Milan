@@ -63,9 +63,10 @@ var plos_layer = new ol.layer.Vector({
 var eplos_layer = new ol.layer.Vector({
     source: vectorSource_lines,
     title: 'enhanced PLOS',
+    visible: false,
     name: 'RoadLinks',
     style: function(feature, resolution) {
-       var name = feature.get('PLOS')
+       var name = feature.get('EPLOS')
        if(name<=2)
        return style1;
        else if(name>2 && name <= 2.75)
